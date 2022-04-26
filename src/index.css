@@ -15,9 +15,10 @@ code {
 
 .main {
   margin: 0, auto;
-  max-width: 50%;
+  max-width: 70%;
   position: absolute;
-  top: 30%;
+  padding-top: 2em;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -38,7 +39,8 @@ code {
 
 .mainh1 {
   text-align: center;
-  color:rgba(0, 132, 255, 0.653)
+  color:rgba(0, 132, 255, 0.653);
+  padding-top: 1em;
 }
 
 th {

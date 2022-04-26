@@ -42,7 +42,6 @@ export default class Main extends React.Component {
     this.setState({ tasks: tasks });
     localStorage.setItem('tasks', JSON.stringify(tasks));
   };
-
   render() {
     return (
       <div className="main">
@@ -56,6 +55,11 @@ export default class Main extends React.Component {
             editTask={this.editTask}
             toggleTask={this.toggleTask}
           />
+          {console.log(this.props.data )}
+        
+          {this.props.data !=0 && this.props.data.map((item)=>{
+            return <li>{item.title}</li>
+          })}
         </div>
       </div>
     );
