@@ -17,7 +17,7 @@ code {
   margin: 0, auto;
   max-width: 70%;
   position: absolute;
-  padding-top: 2em;
+  padding-top: 12em;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -34,7 +34,7 @@ code {
 
 .class1 {
   text-align: center;
-  padding: 1em;
+  
 }
 
 .mainh1 {
