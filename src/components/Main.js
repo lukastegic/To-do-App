@@ -2,14 +2,12 @@ import React from "react";
 import CreateTask from "./CreateTask";
 import TaskList from "./TaskList";
 
-var tasks = localStorage.getItem("tasks")
+const tasks = localStorage.getItem("tasks")
   ? JSON.parse(localStorage.getItem("tasks"))
   : [];
-  console.log("y",tasks);
 export default class Main extends React.Component {
   constructor(props) {
     super(props);
-    
     this.state = {
       tasks: tasks,
     };
@@ -44,12 +42,8 @@ export default class Main extends React.Component {
     this.setState({ tasks: tasks });
     localStorage.setItem('tasks', JSON.stringify(tasks));
   };
+
   render() {
-    var a = [];
-    this.props.data.map((item)=>{
-      a.push({task:item.title,isCompleted:false})
-   });
-   this.state.tasks=[...tasks,...a]
     return (
       <div className="main">
         <h1 className="mainh1">To-do list</h1>
